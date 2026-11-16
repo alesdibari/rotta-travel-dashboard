@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "ROTTA Secure — Travel Command Center",
+  "short_name": "ROTTA",
+  "description": "Organizza i tuoi viaggi offline in un archivio cifrato",
+  "lang": "it-IT",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#08101c",
+  "theme_color": "#0a1424",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

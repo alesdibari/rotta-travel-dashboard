@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a1424">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ROTTA">
+  <meta name="description" content="ROTTA — la tua dashboard di viaggio gratuita, privata e offline.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <title>ROTTA · La tua base di viaggio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Vai al contenuto</a>
+  <div id="vault-root"></div>
+  <div id="app" class="app hidden">
+    <aside class="sidebar" aria-label="Navigazione principale">
+      <div class="brand"><div class="brandmark" id="side-logo"></div><div><div class="brandname">ROTTA</div><div class="brandcaption">Travel command center</div></div></div>
+      <div class="nav-label">LA TUA BASE</div><nav id="sidenav" class="nav"></nav>
+      <div class="side-bottom"><div class="side-tip"><b>✳️ Tutto sotto controllo</b><p>Viaggi, piani e spese salvati sul tuo dispositivo. Nessun abbonamento.</p></div><div class="side-tools"><button class="btn tiny" data-action="export" title="Esporta backup">Backup</button><button class="btn tiny" data-action="settings" title="Impostazioni">Impostazioni</button></div></div>
+    </aside>
+    <main class="main" id="content">
+      <div class="topbar"><div class="mobile-brand"><div class="brandmark" id="mobile-logo"></div>ROTTA</div><div class="crumb" id="breadcrumb">IL TUO <strong>TRAVEL HUB</strong></div><div class="top-actions"><select id="trip-switch" class="trip-select" aria-label="Seleziona viaggio"></select><button class="btn primary newtrip-btn" data-action="add-trip"><span class="ico" data-icon="plus"></span>Nuovo viaggio</button></div></div>
+      <div id="page"></div>
+    </main>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navigazione mobile"></nav>
+  </div>
+  <div id="modal-root"></div><div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

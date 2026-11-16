@@ -1,0 +1,20 @@
+# Never commit travel data, credentials, or personal exports
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+*.sqlite
+*.db
+*.ics
+*backup*.json
+*Backup*.json
+rotta-*.json
+private/
+secrets/
+exports/
+*.zip
+.DS_Store
+Thumbs.db
